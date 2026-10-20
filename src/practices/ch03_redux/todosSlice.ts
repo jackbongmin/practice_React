@@ -73,7 +73,22 @@ const todosSlice = createSlice({
     filterChanged(state, action: PayloadAction<FilterType>) {
         state.filter = action.payload;
         },
+
+    // [규칙 5] 할 일 제목 변경: 전달받은 id와 일치하는 항목을 찾아 title 변경
+    todoRenamed(state, action: PayloadAction<{ id: string; title: string }>) {
+        const nextTitle = action.payload.title.trim();
+        if (!nextTitle) return; // 공백 제목은 막기
+        const target = state.items.find(item => item.id === action.payload.id);
+        if (target) {
+            target.title = nextTitle;
+        }
     },
+    // [규칙 6] 완료 항목 일괄 삭제: done이 true인 항목만 제거
+    completedCleared(state) {
+        // done이 false(미완료)인 항목만 남깁니다 -> TodoSummary의 완료 개수도 자동으로 0개로 갱신됨!
+        state.items = state.items.filter(item => !item.done);
+    },
+}
 });
 
 // 컴포넌트에서 dispatch할 때 사용할 Action Creator 함수들을 내보냅니다.
@@ -82,6 +97,8 @@ export const {
     todoToggled,
     todoRemoved,
     filterChanged,
+    todoRenamed,
+    completedCleared
 } = todosSlice.actions;
 
 // store에 등록할 reducer 함수를 기본(default)으로 내보냅니다.

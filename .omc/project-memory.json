@@ -1,0 +1,180 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1792481491949,
+  "projectRoot": "C:\\Users\\user\\Documents\\GitHub\\React_practice",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "18.2.0",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "18.2.0",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "8.3.4",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "start": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview",
+      "typecheck": "tsc --noEmit"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "public",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1792481491888,
+      "keyFiles": []
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 5,
+      "lastAccessed": 1792481491889,
+      "keyFiles": [
+        "favicon.ico",
+        "logo192.png",
+        "logo512.png",
+        "manifest.json",
+        "robots.txt"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 5,
+      "lastAccessed": 1792481491899,
+      "keyFiles": [
+        "App.tsx",
+        "index.css",
+        "logo.svg",
+        "main.tsx",
+        "vite-env.d.ts"
+      ]
+    },
+    "src\\components": {
+      "path": "src\\components",
+      "purpose": "UI components",
+      "fileCount": 1,
+      "lastAccessed": 1792481491902,
+      "keyFiles": [
+        "Navbar.tsx"
+      ]
+    },
+    "src\\data": {
+      "path": "src\\data",
+      "purpose": "Data files",
+      "fileCount": 5,
+      "lastAccessed": 1792481491903,
+      "keyFiles": [
+        "chance.ts",
+        "date.ts",
+        "image.ts"
+      ]
+    },
+    "src\\types": {
+      "path": "src\\types",
+      "purpose": "Type definitions",
+      "fileCount": 1,
+      "lastAccessed": 1792481491904,
+      "keyFiles": [
+        "practice.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/practices/ch03_redux/ReduxTodoPractice.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1792482202886,
+      "type": "file"
+    },
+    {
+      "path": "src/practices/ch03_redux",
+      "accessCount": 1,
+      "lastAccessed": 1792481508355,
+      "type": "directory"
+    },
+    {
+      "path": "src",
+      "accessCount": 1,
+      "lastAccessed": 1792481513093,
+      "type": "directory"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1792481566351,
+      "type": "file"
+    },
+    {
+      "path": "src/practices/ch03_redux/store.ts",
+      "accessCount": 1,
+      "lastAccessed": 1792481571925,
+      "type": "file"
+    },
+    {
+      "path": "src/practices/registry.ts",
+      "accessCount": 1,
+      "lastAccessed": 1792481572643,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}
